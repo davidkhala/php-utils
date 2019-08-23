@@ -5,6 +5,10 @@ dist: bionic
 before_install:
   - sudo apt-get update
   - ./install.sh apacheServer
+  - export phpInstaller="curl --silent --show-error https://raw.githubusercontent.com/davidkhala/ubuntu-utils/master/php.sh"
+  - $phpInstaller | bash -s installDevPack
+  - $phpInstaller | bash -s installApacheInterpretor
+  - $phpInstaller | bash -s installMySQLConnector
   # enable php-fpm
   - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
   - sudo a2enmod proxy_fcgi
