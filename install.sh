@@ -14,7 +14,7 @@ MySQL() {
     $mysqlInstaller | bash -s install
 }
 apacheServer() {
-    sudo apt install -y apache2 libapache2-mod-fastcgi
+    sudo apt install -y apache2
 }
 PHP() {
     local phpInstaller="curl --silent --show-error https://raw.githubusercontent.com/davidkhala/ubuntu-utils/master/php.sh"
