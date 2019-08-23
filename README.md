@@ -12,4 +12,4 @@ php utils
 ## CICD
 - TravisCI
     - Currently Travis CI does not support mod_php for Apache
-    
+    - `script` section default to run `phpunit`
