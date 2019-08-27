@@ -1,0 +1,13 @@
+{
+    "name": "davidliu/redbean",
+    "description": "Redbean helper",
+    "require": {
+        "gabordemooij/redbean": "^5.3"
+    },
+    "authors": [
+        {
+            "name": "david",
+            "email": "david-khala@hotmail.com"
+        }
+    ]
+}
