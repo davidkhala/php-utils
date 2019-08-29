@@ -19,3 +19,5 @@ before_install:
   - ./install.sh MySQL
 install:
   - ./install.sh phpComposer
+script:
+  - cd redbean; phpunit --bootstrap vendor/autoload.php tests

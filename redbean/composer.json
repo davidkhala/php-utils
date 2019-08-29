@@ -9,5 +9,8 @@
             "name": "david",
             "email": "david-khala@hotmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
 }
