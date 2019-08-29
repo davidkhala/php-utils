@@ -12,6 +12,7 @@ done
 MySQL() {
     local mysqlInstaller="curl --silent --show-error https://raw.githubusercontent.com/davidkhala/ubuntu-utils/master/database/mysql.sh"
     $mysqlInstaller | bash -s install
+    $mysqlInstaller | bash -s start
 }
 apacheServer() {
     sudo apt install -y apache2
