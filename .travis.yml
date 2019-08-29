@@ -21,5 +21,7 @@ before_install:
 install:
   - ./install.sh phpComposer
   - cd redbean; composer install --no-interaction; cd -
+  - cd slim; composer install --no-interaction; cd -
 script:
-  - cd redbean; phpunit --bootstrap vendor/autoload.php tests
+  - cd redbean; phpunit --bootstrap vendor/autoload.php tests; cd -
+  - cd slim; php ./tests/app.php ; cd -
