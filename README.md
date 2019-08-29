@@ -8,7 +8,8 @@
 - Tools: VSCode extension [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt)
 - package manager tool: use [composer] insteadof [PEAR] because of deprecated
 - ORM: use [redbean](https://github.com/gabordemooij/redbean) instead of [doctrine/orm](https://github.com/doctrine/orm/) 
-
+- Restful API Router and middle-ware: [slim] or php native
+- Request to remote service: [guzzle](https://github.com/guzzle/guzzle) or [php-curl]  
 ## CICD
 - TravisCI
     - Currently Travis CI does not support mod_php for Apache

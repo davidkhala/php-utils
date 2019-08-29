@@ -1,0 +1,15 @@
+{
+  "name": "davidliu/composer-sample",
+  "description": "",
+  "require": {
+  },
+  "authors": [
+    {
+      "name": "david",
+      "email": "david-khala@hotmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}

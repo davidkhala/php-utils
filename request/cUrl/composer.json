@@ -1,0 +1,16 @@
+{
+  "name": "davidliu/php-cUrl",
+  "description": "",
+  "require": {
+    "ext-curl": "*"
+  },
+  "authors": [
+    {
+      "name": "david",
+      "email": "david-khala@hotmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}
