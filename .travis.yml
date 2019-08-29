@@ -20,4 +20,4 @@ before_install:
 install:
   - ./install.sh phpComposer
 script:
-  - cd redbean; phpunit --bootstrap vendor/autoload.php tests
+  - cd redbean; composer install --no-interaction; phpunit --bootstrap vendor/autoload.php tests

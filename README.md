@@ -1,7 +1,6 @@
 # php-utils
-php utils 
-
 [![Build Status](https://travis-ci.com/davidkhala/php-utils.svg?branch=master)](https://travis-ci.com/davidkhala/php-utils)
+
 
 
 ## Code style
