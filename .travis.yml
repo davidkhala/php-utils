@@ -17,7 +17,7 @@ before_install:
   - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
   - sudo service apache2 restart
   - ./install.sh MySQL
-  - curl --silent --show-error https://raw.githubusercontent.com/davidkhala/ubuntu-utils/master/database/mysql.sh | bash -s setRootPassword password "''"
+  - sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'";sudo systemctl restart mysql;
 install:
   - ./install.sh phpComposer
   - cd redbean; composer install --no-interaction; cd -
