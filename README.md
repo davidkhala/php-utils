@@ -1,7 +1,7 @@
 # php-utils
 [![Build Status](https://travis-ci.com/davidkhala/php-utils.svg?branch=master)](https://travis-ci.com/davidkhala/php-utils)
 
-
+## 
 
 ## Code style
 - Standard: PSR(PHP Standard Recommendations) [PSR中文规范](https://www.kancloud.cn/thinkphp/php-fig-psr/3139)
@@ -9,7 +9,14 @@
 - package manager tool: use [composer] insteadof [PEAR] because of deprecated
 - ORM: use [redbean](https://github.com/gabordemooij/redbean) instead of [doctrine/orm](https://github.com/doctrine/orm/) 
 - Restful API Router and middle-ware: [slim] or php native
-- Request to remote service: [guzzle](https://github.com/guzzle/guzzle) or [php-curl]  
+- Request to remote service: [guzzle](https://github.com/guzzle/guzzle) or [php-curl]
+    - guzzle dependencies:
+    ```php
+    guzzlehttp/psr7 suggests installing zendframework/zend-httphandlerrunner (Emit PSR-7 responses)
+    guzzlehttp/guzzle suggests installing psr/log (Required for using the Log middleware)
+    ```
+
+  
 ## CICD
 - TravisCI
     - Currently Travis CI does not support mod_php for Apache
