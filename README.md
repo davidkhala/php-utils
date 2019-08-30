@@ -9,6 +9,11 @@
 - package manager tool: use [composer] insteadof [PEAR] because of deprecated
 - ORM: use [redbean](https://github.com/gabordemooij/redbean) instead of [doctrine/orm](https://github.com/doctrine/orm/) 
 - Restful API Router and middle-ware: [slim] or php native
+    - slim
+        - Optional segments can only occur at the end of a route:   
+            - not ok `/{dbname}/[{tableName}]/[{id}]`,  
+            - ok ``/{dbname}/{tableName}/[{id}]``
+        - router is slash "/" sensitive
 - Request to remote service: [guzzle](https://github.com/guzzle/guzzle) or [php-curl]
     - guzzle dependencies:
     ```php
