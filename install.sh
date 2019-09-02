@@ -11,8 +11,7 @@ for ((i = 2; i <= ${#}; i++)); do
 done
 MySQL() {
     local mysqlInstaller="curl --silent --show-error https://raw.githubusercontent.com/davidkhala/ubuntu-utils/master/database/mysql.sh"
-    $mysqlInstaller | bash -s install
-    $mysqlInstaller | bash -s start
+    $mysqlInstaller | bash -s setup
 }
 apacheServer() {
     sudo apt install -y apache2
